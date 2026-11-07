@@ -1,0 +1,1 @@
+window.applyTheme=function(theme){document.documentElement.dataset.theme=theme;Store.set("theme",theme)};const savedTheme=Store.get("theme",null);applyTheme(savedTheme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"));window.toggleTheme=function(){applyTheme(document.documentElement.dataset.theme==="dark"?"light":"dark")};

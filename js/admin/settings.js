@@ -1,0 +1,1 @@
+// Admin settings hooks are initialized in app.js.

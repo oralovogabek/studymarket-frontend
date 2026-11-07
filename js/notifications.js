@@ -1,0 +1,1 @@
+window.notify=function(message){let root=document.getElementById("toastRoot");if(!root){root=document.createElement("div");root.id="toastRoot";root.className="toast-root";document.body.append(root)}const item=document.createElement("div");item.className="toast";item.textContent=message;root.append(item);setTimeout(()=>item.remove(),2800)};

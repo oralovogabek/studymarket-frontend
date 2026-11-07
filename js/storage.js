@@ -1,0 +1,1 @@
+window.Store = {get(key,fallback){try{return JSON.parse(localStorage.getItem("sm_"+key)) ?? fallback}catch{return fallback}},set(key,value){localStorage.setItem("sm_"+key,JSON.stringify(value))},remove(key){localStorage.removeItem("sm_"+key)}};
